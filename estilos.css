@@ -29,6 +29,7 @@ header{
     margin-right: 15px;
     gap: 100px;
     list-style: none;
+    font-size: 20px;
 }
 
 .logo{
@@ -43,7 +44,7 @@ header{
 }
 
 .main-menu a:hover{
-    color: #00296d;
+    color: #44c6e9;
 }
 
 .search-form {
