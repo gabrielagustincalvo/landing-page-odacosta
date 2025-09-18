@@ -1,0 +1,207 @@
+
+body{
+    font-family: sans-serif;
+    margin: 0;
+    background-color: black;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+/* header completo */
+header{
+    display: flex;
+    min-height: 60px;
+    background-color: #d4e4f4;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+/*header parte menu*/
+.main-menu{
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    margin-right: 15px;
+    gap: 100px;
+    list-style: none;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+}
+
+.logo img{
+    height: 60px;
+    margin-right: 10px;
+    border-radius: 50px;
+}
+
+.main-menu a:hover{
+    color: #00296d;
+}
+
+.search-form {
+  display: flex;
+  align-items: center;
+}
+
+.search-form input {
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.search-form button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1.2em;
+  padding-left: 5px;
+}
+
+/* VER SI QUIERO QUE FUNCIONE ASI O NO */
+
+/* Ejemplo de cómo ocultar/mostrar el input con CSS y JavaScript */
+.search-form input {
+  width: 0; /* Oculta el input inicialmente */
+  transition: width 0.3s ease;
+  overflow: hidden;
+}
+
+.search-form.active input {
+  width: 200px; /* Muestra el input cuando tiene la clase 'active' */
+  padding: 5px;
+}
+
+/* EN CASO DE NO QUERER LA FUNCIONABILIDAD DEL BUSCADOR, ELIMINAR DE LA LINEA 71 A LA 80 Y EN JS DE LA LINEA 1 A LA 21 */
+
+
+
+
+
+
+
+
+
+.nombre-consultorio{
+    font-family: cursive;
+}
+
+header h2{
+  font-family: "Ephesis", cursive;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 280%;
+}
+
+h3{
+    font-family: 'Open Sans';
+}
+
+header a{
+    display: flex;
+}
+
+/*
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.header{
+    display: flex;
+    min-height: 60px;
+    background-color: #d4e4f4;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+
+
+.logo img{
+    height: 60px;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+.menu ul li{
+    position: relative;
+    float: center;
+    
+}
+
+.menu ul li a{
+    font-size: 18px;
+    padding: 20px;
+    color: black;
+    display: block;
+    font-weight: bold;
+}
+
+.menu .navbar ul li a:hover{
+    color: aqua;
+}
+
+.header-txt{
+    width: 40%;
+}
+
+.header-txt h1{
+    font-size: 70px;
+    line-height: 80px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: aqua;
+    margin-bottom: 25px;
+    font-family: sans-serif;
+}
+
+.header-txt p{
+    font-size: 18px;
+    color: aqua;
+    font-weight: bold;
+    margin-bottom: 25px;
+}
+
+.btn-1{
+    display: inline-block;
+    padding: 13px 20px;
+    border-radius: 25px;
+    text-transform: uppercase;
+    color: blueviolet;
+    background-color: black;
+    font-family: fantasy;
+}
+
+.btn-1:hover{
+    background-color: antiquewhite;
+}
+
+.images{
+    width: 80px;
+    height: 380px;
+    position: absolute;
+    right: 0;
+
+}
+
+*/
