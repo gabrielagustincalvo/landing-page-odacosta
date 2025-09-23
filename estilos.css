@@ -2,7 +2,6 @@
 body{
     font-family: sans-serif;
     margin: 0;
-    background-color: black;
 }
 
 a{
@@ -82,6 +81,22 @@ header{
 
 /* EN CASO DE NO QUERER LA FUNCIONABILIDAD DEL BUSCADOR, ELIMINAR DE LA LINEA 71 A LA 80 Y EN JS DE LA LINEA 1 A LA 21 */
 
+.banner {
+    width: 100%;
+    overflow: hidden;
+    padding: 0;
+    height: 80vh; /* Ocupa el 70% de la altura de la ventana */
+    display: flex; /* Permite usar Flexbox para centrar */
+    justify-content: center; /* Centra la imagen horizontalmente */
+    align-items: center; /* Centra la imagen verticalmente */
+}
+
+.banner img {
+    width: 100%; /* La imagen se ajusta al ancho de su contenedor */
+    height: 100%; /* La imagen se ajusta al alto de su contenedor (el banner) */
+    object-fit: cover; /* Recorta la imagen para que cubra todo el espacio sin distorsión */
+    display: block;
+}
 
 
 
@@ -89,7 +104,7 @@ header{
 
 
 
-
+/*
 .nombre-consultorio{
     font-family: cursive;
 }
@@ -109,7 +124,6 @@ header a{
     display: flex;
 }
 
-/*
 *{
     margin: 0;
     padding: 0;
