@@ -1,25 +1,75 @@
+:root{
+    --main-c:#2977d5;
+    --border-r:1.2rem;
+}
 
-body{
-    font-family: sans-serif;
+/** Estilos generales **/
+
+html *{
     margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+p{
+    font-size: 1.1rem;
 }
 
 a{
     text-decoration: none;
-    color: black;
 }
 
-/* header completo */
-header{
+ul, li{
+    list-style: none;
+}
+
+.wrap-cta{
+    padding: 1.5rem 0;
+}
+
+.cta-a{
+    color: #fff;
+    font-weight: bold;
+    font-size: 1.2rem;
+    background-color: var(--main-c);
+    padding: 0.5rem 1rem;
+    border-radius: var(--border-r);
+}
+
+h1{
+    font-size: 2,8rem;
+}
+
+h2{
+    font-size: 2,5rem;
+}
+
+h3{
+    font-size: 2,2rem;
+}
+
+/** Header **/
+
+.header-landing{
     display: flex;
     min-height: 60px;
     background-color: #d4e4f4;
     justify-content: space-between;
     align-items: center;
     padding: 10px;
+
 }
 
-/*header parte menu*/
+.logo-header{
+    max-width: 300px;
+    height: 100%;
+    width: 100%;
+    margin-right: 10px;
+    border-radius: 10px;
+}
+
+/** Header parte menu **/
+
 .main-menu{
     padding: 0;
     margin: 0;
@@ -31,192 +81,198 @@ header{
     font-size: 20px;
 }
 
-.logo{
-    display: flex;
-    align-items: center;
-}
-
-.logo img{
-    height: 80px;
-    margin-right: 10px;
-    border-radius: 10px;
-}
-
 .main-menu a:hover{
     color: #44c6e9;
 }
 
-.search-form {
+.search-form{
   display: flex;
   align-items: center;
 }
 
-.search-form input {
+.search-form input{
   padding: 5px;
   border: 1px solid #ccc;
   border-radius: 5px;
 }
 
-.search-form button {
+.search-form button{
   background: none;
   border: none;
   cursor: pointer;
-  font-size: 1.2em;
+  font-size: 1.2rem;
   padding-left: 5px;
 }
 
-/* VER SI QUIERO QUE FUNCIONE ASI O NO */
-
-/* Ejemplo de cómo ocultar/mostrar el input con CSS y JavaScript */
-.search-form input {
-  width: 0; /* Oculta el input inicialmente */
-  transition: width 0.3s ease;
-  overflow: hidden;
-}
-
-.search-form.active input {
-  width: 200px; /* Muestra el input cuando tiene la clase 'active' */
-  padding: 5px;
-}
-
-/* EN CASO DE NO QUERER LA FUNCIONABILIDAD DEL BUSCADOR, ELIMINAR DE LA LINEA 71 A LA 80 Y EN JS DE LA LINEA 1 A LA 21 */
-
-.banner {
-    width: 100%;
-    overflow: hidden;
-    padding: 0;
-    height: 80vh; /* Ocupa el 70% de la altura de la ventana */
-    display: flex; /* Permite usar Flexbox para centrar */
-    justify-content: center; /* Centra la imagen horizontalmente */
-    align-items: center; /* Centra la imagen verticalmente */
-}
-
-.banner img {
-    width: 100%; /* La imagen se ajusta al ancho de su contenedor */
-    height: 100%; /* La imagen se ajusta al alto de su contenedor (el banner) */
-    object-fit: cover; /* Recorta la imagen para que cubra todo el espacio sin distorsión */
-    display: block;
-}
-
-
-
-
-
-
-
-/*
-.nombre-consultorio{
-    font-family: cursive;
-}
-
-header h2{
-  font-family: "Ephesis", cursive;
-  font-weight: 500;
-  font-style: normal;
-  font-size: 280%;
-}
-
-h3{
-    font-family: 'Open Sans';
-}
-
-header a{
+.hero-section{
+    height: 70vh;
+    background: url(img/image6.1.2.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #616161;
+    background-blend-mode: multiply;
     display: flex;
+    align-items: center;
 }
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    text-decoration: none;
-    list-style: none;
+.wrap-hero-section{
+    max-width: 850px;
+    color: #fff;
+    padding: 15%;
 }
 
-body{
-    font-family: Arial, Helvetica, sans-serif;
+/** Wrap title **/
+
+.wrap-title-section{
+    display: flex;
+    justify-content: center;
+    margin: 3rem 1rem;
 }
 
-.container{
+/** Tratamientos **/
+
+.wrap-tratamientos-section{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+.item-tratamientos-section{
+    padding: 5rem;
+}
+
+.item-tratamientos-section img{
+    width: 350px;
+    height: 225px;
+}
+
+/** Seccion "Acerca de mi" **/
+
+.two-column-section{
+    padding: 40px 0;
     max-width: 1200px;
     margin: 0 auto;
 }
 
-.header{
+.wrap-title-section h2{
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.wrap-two-column{
     display: flex;
-    min-height: 60px;
-    background-color: #d4e4f4;
-    justify-content: space-between;
+    gap: 40px;
     align-items: center;
-    padding: 10px;
+
 }
 
-
-
-.logo img{
-    height: 60px;
-    margin-left: 10px;
-    margin-top: 10px;
+.wrap-img_two-column{
+    flex: 0 0 30%;
+    max-width: 30%;
 }
 
-.menu ul li{
-    position: relative;
-    float: center;
-    
-}
-
-.menu ul li a{
-    font-size: 18px;
-    padding: 20px;
-    color: black;
+.wrap-img_two-column img{
     display: block;
-    font-weight: bold;
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
 }
 
-.menu .navbar ul li a:hover{
-    color: aqua;
+.wrap-text-column h3{
+    padding: 2rem 0;
 }
 
-.header-txt{
-    width: 40%;
+.wrap-text.column p{
+        padding-bottom: 1rem;
 }
 
-.header-txt h1{
-    font-size: 70px;
-    line-height: 80px;
-    font-weight: 700;
-    text-transform: uppercase;
-    color: aqua;
-    margin-bottom: 25px;
-    font-family: sans-serif;
+/** Footer **/
+
+/* --- ESTILOS PARA EL PIE DE PÁGINA --- */
+
+/* 1. Contenedor principal: Activa el diseño de cuadrícula */
+.wrap-footer-section {
+    display: grid;
+    /* Define 5 columnas de igual ancho (1fr = una fracción del espacio) */
+    grid-template-columns: repeat(5, 1fr); 
+    /* Espacio entre las columnas */
+    gap: 30px; 
+    /* Relleno para separar el contenido de los bordes del footer */
+    padding: 40px 20px;
+    width: 100%;
 }
 
-.header-txt p{
-    font-size: 18px;
-    color: aqua;
-    font-weight: bold;
-    margin-bottom: 25px;
+/* 2. Posicionamiento de las 5 secciones en las columnas */
+
+/* Columna 1: logo y datos */
+.wrap-footer-section > .info {
+    grid-column: 1 / 2;
 }
 
-.btn-1{
-    display: inline-block;
-    padding: 13px 20px;
-    border-radius: 25px;
-    text-transform: uppercase;
-    color: blueviolet;
-    background-color: black;
-    font-family: fantasy;
+/* Columna 2: Menu */
+.wrap-footer-section > .footer-menu {
+    grid-column: 2 / 3;
+    padding-left: 25%;
 }
 
-.btn-1:hover{
-    background-color: antiquewhite;
+/* Columna 3: Tratamientos (primera lista con título) */
+.wrap-footer-section > .footer-tratamientos {
+    grid-column: 3 / 4;
 }
 
-.images{
-    width: 80px;
-    height: 380px;
-    position: absolute;
-    right: 0;
-
+/* Columna 4: Más tratamientos (segunda lista sin título) */
+/* NOTA: Tu HTML ya tiene la estructura correcta para que el título 'Tratamientos' 
+   no aparezca aquí, ya que el <h4> está solo en .footer-tratamientos. */
+.wrap-footer-section > .footer-tratamientos2 {
+    grid-column: 4 / 5;
+    margin: 40px;
 }
 
-*/
+/* Columna 5: Data Fiscal */
+.wrap-footer-section > .footer-data-fiscal {
+    grid-column: 5 / 6;
+    /* Opcional: Centrar el código QR horizontalmente en la columna */
+    text-align: center;
+}
+
+.footer-data-fiscal img {
+    /* Opcionalmente puedes definir un tamaño máximo si es demasiado grande */
+    max-width: 100px;
+}
+
+/* 3. Estilo para la sección de Copyright (que debe ir abajo y ocupar todo el ancho) */
+.wrap-footer-section > .menu-footer-section {
+    /* Ocupa desde la primera línea hasta la última línea (todo el ancho) */
+    grid-column: 1 / -1; 
+    /* Asegura que ocupe la segunda fila */
+    grid-row: 2; 
+    /* Estilos de presentación */
+    text-align: center;
+    padding-top: 20px;
+    margin-top: 20px;
+    border-top: 1px solid #eee; /* Línea separadora sutil */
+}
+
+/* Opcional: Ajustes de estilo */
+.info img {
+    max-width: 70%;
+    height: auto;
+    margin-bottom: 15px;
+    border-radius: var(--border-r);
+}
+
+.wrap-footer-section h4 {
+    margin-bottom: 10px;
+    /* Opcional: Asegurar que los títulos destaquen */
+    font-size: 1.1em;
+}
+
+.wrap-footer-section ul {
+    list-style: none; /* Eliminar viñetas por defecto */
+    padding: 0;
+}
+
+.wrap-footer-section ul li {
+    margin-bottom: 5px;
+}
