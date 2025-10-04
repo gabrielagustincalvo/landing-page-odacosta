@@ -150,7 +150,7 @@ h3{
 /** Seccion "Acerca de mi" **/
 
 .two-column-section{
-    padding: 40px 0;
+    padding: 40px 15px;
     max-width: 1200px;
     margin: 0 auto;
 }
@@ -164,12 +164,19 @@ h3{
     display: flex;
     gap: 40px;
     align-items: center;
+    padding: 0 20px;
 
 }
 
 .wrap-img_two-column{
-    flex: 0 0 30%;
-    max-width: 30%;
+    flex: 0 0 40%;
+    max-width: 40%;
+}
+
+.wrap-img_two-column:nth-child(2){
+    /* El segundo wrap-img_two-column que contiene el texto, debería ocupar el resto del espacio */
+    flex: 1; /* Esto le permite expandirse para ocupar el espacio restante */
+    max-width: 60%; /* Y un máximo para que no se extienda demasiado */
 }
 
 .wrap-img_two-column img{
@@ -177,13 +184,16 @@ h3{
     width: 100%;
     height: auto;
     border-radius: 50%;
+    object-fit: cover;
+    aspect-ratio: 1 / 1;
 }
 
 .wrap-text-column h3{
-    padding: 2rem 0;
+    padding: 0 0 1rem 0;
+    margin: 0;
 }
 
-.wrap-text.column p{
+.wrap-text-column p{
         padding-bottom: 1rem;
 }
 
