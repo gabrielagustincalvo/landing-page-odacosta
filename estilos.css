@@ -220,6 +220,37 @@ h3{
     margin-bottom: 15px;
 }
 
+/** Medios de pago **/
+
+.medios-de-pago{
+    /* Centra horizontalmente el texto dentro de esta sección: 
+       Afecta al <h2> y al <p> */
+    text-align: center;
+    
+    /* Opcional: Define un ancho máximo para que el texto no sea demasiado largo */
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+/* 2. Estilos para la lista (modo lista vertical) */
+.main-menu-pagos{
+    /* La clave: Le permite al 'ul' centrarse con 'text-align: center;' 
+       del padre, pero sigue comportándose como un bloque para su contenido. */
+    display: inline-block; 
+    
+    /* Le devuelve la alineación a la izquierda al texto de los <li> 
+       para que los puntos de la lista se vean correctamente. */
+    text-align: left; 
+    
+    /* Mantiene los puntos de la lista (aunque tu estilo global ya lo hace) */
+    list-style: armenian;
+    
+    /* Añade espacio para que los puntos de la lista sean visibles */
+    padding-left: 40px; 
+    margin-bottom: 20px;
+}
+
 /** Footer **/
 
 /* --- ESTILOS PARA EL PIE DE PÁGINA --- */
