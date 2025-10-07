@@ -316,6 +316,59 @@ h3{
     background-color: #128C7E; 
 }
 
+/** Consultorios ubicados en **/
+
+.location{
+    /* max-width se mantiene para centrar la sección */
+    max-width: 1000px;
+    margin: 40px auto; 
+    padding: 20px;
+}
+
+/* 1. Contenedor de las dos columnas */
+.wrap-two-column-location {
+    /* CLAVE: Activa Flexbox para la disposición en dos columnas */
+    display: flex; 
+    /* Distribuye el espacio entre las columnas */
+    justify-content: space-between; 
+    /* Espacio entre las columnas */
+    gap: 30px; 
+    padding: 0 20px;
+}
+
+/* 2. Estilo para cada columna (cada consultorio) */
+.location-item {
+    /* Permite que cada columna ocupe la mitad del espacio */
+    flex: 1; 
+    /* CLAVE: Centra horizontalmente el texto (el párrafo) */
+    text-align: center; 
+}
+
+/* 3. Estilos para el mapa */
+.location-item .mapa {
+    /* El contenedor del mapa (div con clase .mapa) puede necesitar un margen */
+    margin-top: 15px;
+    overflow: hidden; /* Asegura que el iframe no se salga */
+    /* Define un alto máximo para que no ocupe demasiado */
+    max-height: 300px; 
+    border-radius: var(--border-r);
+}
+
+.location-item iframe {
+    /* CLAVE: Los mapas se ajustarán al 100% del ancho del contenedor (.ubicacion-item) */
+    width: 100%; 
+    height: 300px; /* Tamaño claro y nítido */
+    display: block;
+}
+
+/* Ajuste adicional para el texto de la ubicación */
+.location-item p {
+    font-weight: bold;
+    margin-bottom: 10px; /* Separación entre el párrafo y el mapa */
+}
+
+
+
 
 /** Footer **/
 
