@@ -251,6 +251,72 @@ h3{
     margin-bottom: 20px;
 }
 
+/** Contactate ya **/
+
+/* 1. Centrar el contenedor principal (la <section>) horizontalmente - SIN CAMBIOS */
+.contactate{
+    /* Establece un ancho máximo y centra con margin: auto */
+    max-width: 1000px; 
+    margin: 40px auto; 
+    padding: 20px; 
+}
+
+.contactate-ya{
+    /* Solo contenedor de fondo y padding - SIN CAMBIOS SIGNIFICATIVOS */
+    background-color: black;
+    border-radius: var(--border-r);
+    color: #fff;
+    padding: 30px; 
+    display: flex; /* Mantenemos display: flex para centrar el wrap-cta-whatsapp */
+    justify-content: center; 
+    align-items: center;
+}
+
+/* 2. Estilo para el contenedor del título, párrafo y botón (para colocarlos LADO A LADO) */
+.wrap-cta-whatsapp {
+    /* CLAVE 1: Activa Flexbox para colocar los 3 elementos en fila */
+    display: flex;
+    flex-direction: row; /* Asegura la disposición horizontal */
+    align-items: center; /* Alinea verticalmente al centro
+    
+    /* CLAVE 2: Define el espacio entre el título, párrafo y botón */
+    gap: 40px; /* Separación entre elementos (ajuste según prefiera) */
+    flex-wrap: nowrap; /* Evita que se ajusten a varias líneas si no es necesario */
+}
+
+/* 3. Estilo para el título (separación y salto de línea) */
+.contactate-ya h3 {
+    /* Permite que los saltos de línea en el código HTML sean respetados */
+    white-space: pre-line; 
+    text-align: left; /* Alinea el texto a la izquierda dentro de su propio bloque */
+    margin: 0; /* Elimina márgenes extra si existen */
+}
+
+/* 4. Estilo para el párrafo (separación y salto de línea) */
+.contactate-ya p {
+    /* Permite que los saltos de línea en el código HTML sean respetados */
+    white-space: pre-line; 
+    text-align: left;
+    margin: 0; /* Ya no necesita el margin-bottom porque la separación es manejada por 'gap' */
+    font-size: 1.1rem;
+}
+
+.cta-a-whatsapp{
+    /* Asegúrate de que el botón también tenga estilos de texto y padding */
+    color: #fff;
+    font-weight: bold;
+    font-size: 1.2rem;
+    background-color: #25D366;
+    padding: 0.5rem 1rem;
+    border-radius: var(--border-r);
+    white-space: nowrap; /* Evita que el texto del botón se corte */
+}
+
+.cta-a-whatsapp:hover{
+    background-color: #128C7E; 
+}
+
+
 /** Footer **/
 
 /* --- ESTILOS PARA EL PIE DE PÁGINA --- */
